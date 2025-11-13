@@ -1,0 +1,1857 @@
+table encounter
+	lineageTag: a938c941-02a6-4b5e-9779-8970b5b2838c
+
+	measure m_#encounters = COUNT(encounter[encounter_id])
+		formatString: 0
+		lineageTag: 80580696-8a7c-4797-b8cf-abc049a9001a
+
+	column encounter_key
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: ab2c847b-a5e3-4db7-8ff3-da2067d998a0
+		summarizeBy: none
+		sourceColumn: encounter_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_name
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 0668e21b-fb1c-4817-9cae-8fed4945e932
+		summarizeBy: none
+		sourceColumn: provider_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_short_name
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: e733cabe-505d-452a-84c8-cc77ea4b1f79
+		summarizeBy: none
+		sourceColumn: provider_short_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_record_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: cdcfb7e4-40e0-4696-857e-db3fe00b0604
+		summarizeBy: sum
+		sourceColumn: encounter_record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_group_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a670b2dc-2fdf-4380-bad1-07685440fe0a
+		summarizeBy: sum
+		sourceColumn: data_group_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_id
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 6f1b20bf-51c6-42d7-9c28-e25519bd0423
+		summarizeBy: none
+		sourceColumn: provider_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cohort
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: e3014358-9c95-489f-8c08-5aad052f1b9b
+		summarizeBy: none
+		sourceColumn: provider_cohort
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_id
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 7ac852b9-1f7b-42a6-b175-1f1e580cab70
+		summarizeBy: none
+		sourceColumn: encounter_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_id
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 2592c1c1-44d4-42f2-a2ea-458a19b74030
+		summarizeBy: none
+		sourceColumn: patient_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_in_months
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f30027c5-6421-4521-b056-0a0f65b2172d
+		summarizeBy: sum
+		sourceColumn: age_in_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_group_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a641a0eb-3768-47dc-a70b-a349c66d8fa7
+		summarizeBy: sum
+		sourceColumn: age_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_group_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: a9c50eaa-c673-462c-8723-050e2dfe4bf3
+		summarizeBy: none
+		sourceColumn: age_group_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: dd0900de-9f40-4ff2-9122-6caaa3f9bc59
+		summarizeBy: sum
+		sourceColumn: msdrg_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 97a272f8-f8de-42d9-8aff-6a0d40b52154
+		summarizeBy: none
+		sourceColumn: msdrg_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_msdrg_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5c0d28be-c638-4b5e-b71f-cff6c7faba55
+		summarizeBy: sum
+		sourceColumn: base_msdrg_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_msdrg_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 4a61eeb0-a452-4448-a64c-9302e0145768
+		summarizeBy: none
+		sourceColumn: base_msdrg_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_section
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 5360d6c7-e317-4433-93b4-39177de39624
+		summarizeBy: none
+		sourceColumn: msdrg_section
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_severity_tier
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: efacc93a-df6c-485b-a997-b697d354939c
+		summarizeBy: none
+		sourceColumn: msdrg_severity_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column pair_name
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 3359fcf8-b4ba-4507-82a0-38da2d7fe9ee
+		summarizeBy: none
+		sourceColumn: pair_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_cat_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: cae3f3f0-3b08-408d-b145-7426f81ef72e
+		summarizeBy: none
+		sourceColumn: msdrg_cat_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_weight
+		dataType: double
+		sourceProviderType: double
+		lineageTag: f2c04773-8871-4220-b2f4-d95939dbda9d
+		summarizeBy: sum
+		sourceColumn: msdrg_weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sub_service_line_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: f9e795c7-36a4-4233-8158-f78bffbcc310
+		summarizeBy: none
+		sourceColumn: sub_service_line_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_service_line_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 90084c5a-746b-4ed9-8ccf-8eb2a1de042b
+		summarizeBy: none
+		sourceColumn: sub_service_line_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2908935d-3b53-45aa-8de7-761ac6e31932
+		summarizeBy: sum
+		sourceColumn: service_line_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 0b199a0f-a097-4734-a689-edc37575e5c9
+		summarizeBy: none
+		sourceColumn: service_line_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_section
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 2b059203-7459-48c3-8cd0-b981e7c58939
+		summarizeBy: none
+		sourceColumn: service_line_section
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 6697dbf3-b51a-4ed4-9910-e08ac756793e
+		summarizeBy: none
+		sourceColumn: admission_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_hour
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 853ece7b-51a0-41b7-9de2-85b10df24be9
+		summarizeBy: sum
+		sourceColumn: admission_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_status_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 525e3928-9cf2-469b-90c9-70b504a6ce8a
+		summarizeBy: none
+		sourceColumn: admission_status_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_status_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 9e1b6d0d-9621-46dd-a45f-303fe8535b08
+		summarizeBy: none
+		sourceColumn: admission_status_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_source_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a5c28ab9-8281-497f-a98c-bb0270410741
+		summarizeBy: sum
+		sourceColumn: admission_source_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_source_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: a4ee5405-715d-4790-9cb3-d4f6015f10d7
+		summarizeBy: none
+		sourceColumn: admission_source_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_source_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 9d626c1e-0acc-4aa8-93b9-6ce147443e01
+		summarizeBy: none
+		sourceColumn: admission_source_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_type_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 56991c70-4aec-47a1-aa81-7ba2b62d66bd
+		summarizeBy: none
+		sourceColumn: encounter_type_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_class_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 3b90ee0d-552c-4b32-ab8b-7041b3f6140f
+		summarizeBy: none
+		sourceColumn: encounter_class_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_patient_index
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 9914ab6e-c9bd-40bf-b007-819ea60a0089
+		summarizeBy: none
+		sourceColumn: master_patient_index
+
+		annotation SummarizationSetBy = Automatic
+
+	column admit_diagnosis_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 1da40477-9ac8-4500-8611-2a4ef9dd608b
+		summarizeBy: none
+		sourceColumn: admit_diagnosis_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column admit_diagnosis_code_icd10
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: d74c40bb-da4e-4f45-8a0b-2002e92ac978
+		summarizeBy: none
+		sourceColumn: admit_diagnosis_code_icd10
+
+		annotation SummarizationSetBy = Automatic
+
+	column acute_transfer_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b80546f1-fc1a-408a-bb95-c1374ceff266
+		summarizeBy: sum
+		sourceColumn: acute_transfer_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b4a9a675-d2fc-4fa9-bc10-0cf889a27e79
+		summarizeBy: none
+		sourceColumn: discharge_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_hour
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 445fa59e-87f2-423c-abc1-04473ae7d1a7
+		summarizeBy: sum
+		sourceColumn: discharge_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_month
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a5569edc-01d7-47ae-8d7c-cb906d90d064
+		summarizeBy: sum
+		sourceColumn: discharge_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_month_year
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 453ce520-e4a1-460a-8e1e-5bf288be3835
+		summarizeBy: none
+		sourceColumn: discharge_month_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_status_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 29da7302-0070-425c-b936-dca76cb1e942
+		summarizeBy: none
+		sourceColumn: discharge_status_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_status_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: c70e766b-b793-4dbc-a3a8-6ad2353f0ce5
+		summarizeBy: none
+		sourceColumn: discharge_status_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column los
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f1e96f81-5538-4bf9-b633-e2d16d2595be
+		summarizeBy: sum
+		sourceColumn: los
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_los
+		dataType: double
+		sourceProviderType: decimal(8, 4)
+		lineageTag: 7104bab1-ebb9-4e15-a878-de8aab886d62
+		summarizeBy: sum
+		sourceColumn: expected_los
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column expected_los_cm
+		dataType: double
+		sourceProviderType: decimal(8, 4)
+		lineageTag: 66c8bbc5-4f95-4442-991d-e5cc07d5841a
+		summarizeBy: sum
+		sourceColumn: expected_los_cm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column death_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 272b60f0-6c91-42ce-b174-f5966b0f737b
+		summarizeBy: sum
+		sourceColumn: death_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_death_cnt
+		dataType: double
+		sourceProviderType: decimal(10, 7)
+		lineageTag: 89e5e9d6-9ada-4e11-a865-82be2c67c9d1
+		summarizeBy: sum
+		sourceColumn: expected_death_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column expected_death_cnt_cm
+		dataType: double
+		sourceProviderType: decimal(10, 7)
+		lineageTag: a5ce556a-ac92-4195-a429-e90ae3cf501f
+		summarizeBy: sum
+		sourceColumn: expected_death_cnt_cm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column expected_cost
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d15c9bac-ebe1-4fee-8a49-a6376d7d9d32
+		summarizeBy: sum
+		sourceColumn: expected_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_cost_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: cb3de560-b9d5-433a-a25b-1ed398d4f5f4
+		summarizeBy: sum
+		sourceColumn: expected_cost_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column alive_inlier_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3b4c271a-6541-4234-ac3d-af1dcefd8b31
+		summarizeBy: sum
+		sourceColumn: alive_inlier_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column alive_inlier_cnt_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: af40b3c6-f738-4c9f-8950-7ba878947b24
+		summarizeBy: sum
+		sourceColumn: alive_inlier_cnt_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_inlier_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6c9aa814-ef69-416c-b525-52d6f12a78b0
+		summarizeBy: sum
+		sourceColumn: los_inlier_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_inlier_cnt_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 138efd0d-33cf-4fa3-a56d-78b3a0906b05
+		summarizeBy: sum
+		sourceColumn: los_inlier_cnt_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column icu_days_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 34836f16-8b22-4592-8015-8128c37ddbff
+		summarizeBy: sum
+		sourceColumn: icu_days_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_icu_days
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f3ef02cd-2bcb-40ec-b554-dd390ae1d782
+		summarizeBy: sum
+		sourceColumn: encounter_icu_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column comorbidity_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5a811b7c-fde6-45a0-bbe5-e29349241153
+		summarizeBy: sum
+		sourceColumn: comorbidity_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column comorbidity_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a3a3f99b-c4c8-4018-96fa-4873f65a0f41
+		summarizeBy: sum
+		sourceColumn: comorbidity_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_ped_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 71bbf1ff-6aac-4623-a43b-2225b01c9751
+		summarizeBy: sum
+		sourceColumn: complication_ped_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_ped_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1926d731-4aca-423a-b480-baddda938afb
+		summarizeBy: sum
+		sourceColumn: complication_ped_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_psi_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: e32f7bda-924a-41f9-949b-a6cd898deedc
+		summarizeBy: sum
+		sourceColumn: complication_psi_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_psi_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c3a4293f-35fb-4c97-ad99-c17beab8a2ae
+		summarizeBy: sum
+		sourceColumn: complication_psi_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_viz_thk_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6f124567-c044-49ae-8558-e47fefaf3b27
+		summarizeBy: sum
+		sourceColumn: complication_viz_thk_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_viz_thk_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 23ff78e7-ff3b-4243-bc2e-de9b712742c2
+		summarizeBy: sum
+		sourceColumn: complication_viz_thk_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_viz_non_thk_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c0f88d4f-49a3-4f95-85a3-cef0852603c2
+		summarizeBy: sum
+		sourceColumn: complication_viz_non_thk_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_viz_non_thk_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b7a7b6e5-29cf-4fb5-af89-f1bbfadabd0b
+		summarizeBy: sum
+		sourceColumn: complication_viz_non_thk_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_hac_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4252d641-1ccc-45b3-8db7-d6fff3a29ac8
+		summarizeBy: sum
+		sourceColumn: complication_hac_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_hac_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d4f695ca-4b1e-4b20-85ca-3bc516d5ede2
+		summarizeBy: sum
+		sourceColumn: complication_hac_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_cnt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d6c2ba2c-8b91-4ec1-80aa-79326d1db532
+		summarizeBy: sum
+		sourceColumn: complication_cnt
+
+		annotation SummarizationSetBy = Automatic
+
+	column complication_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c6a7953a-08c9-491a-9fe5-5336068a0ec9
+		summarizeBy: sum
+		sourceColumn: complication_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column geriatric_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 06dae86f-f59c-474e-8936-bbc55aa9c8bf
+		summarizeBy: sum
+		sourceColumn: geriatric_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column chemotherapy_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d54624cd-b23f-40f5-acae-67c06c306294
+		summarizeBy: sum
+		sourceColumn: chemotherapy_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column rehabilitation_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 9e5182db-cc73-4a2f-873d-180063d01e78
+		summarizeBy: sum
+		sourceColumn: rehabilitation_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column radiation_therapy_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 11222959-4941-47a7-808f-dd800b459ba7
+		summarizeBy: sum
+		sourceColumn: radiation_therapy_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column dialysis_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0ab3e150-e8ca-4f44-add8-7f805335d96c
+		summarizeBy: sum
+		sourceColumn: dialysis_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column delivery_birth_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 37ac273b-cd10-4e32-bdb0-59a86607b7cb
+		summarizeBy: sum
+		sourceColumn: delivery_birth_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column planned_adm_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b03f43eb-da2d-45bf-bf38-8115482a5d17
+		summarizeBy: sum
+		sourceColumn: planned_adm_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column medical_tourism_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a52f9b8d-8de9-43c6-9f9d-74f0a7658c8e
+		summarizeBy: sum
+		sourceColumn: medical_tourism_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column prison_population_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ba5ee620-141b-4ae3-a9ac-ebf7c29e3c19
+		summarizeBy: sum
+		sourceColumn: prison_population_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column early_death_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 9d9a46a9-ac30-4f95-a859-a3400cd891d2
+		summarizeBy: sum
+		sourceColumn: early_death_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column normal_newborn_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 3bc73d2b-0eed-42fc-bef8-f2e45db49c0d
+		summarizeBy: sum
+		sourceColumn: normal_newborn_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_outlier_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2c34dec3-e275-4b5b-9752-3b5e84988ba9
+		summarizeBy: sum
+		sourceColumn: los_outlier_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column bad_data_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 563f41ca-ff12-4872-9006-b710e4cc555f
+		summarizeBy: sum
+		sourceColumn: bad_data_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column hospice_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 226efee4-a704-4854-9e32-76ae16f2ddec
+		summarizeBy: sum
+		sourceColumn: hospice_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column non_viable_neonate_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4d168fc7-14f4-4d5a-8d9b-c9d866285597
+		summarizeBy: sum
+		sourceColumn: non_viable_neonate_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column ed_flag_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 3da0e283-93ae-42da-9d65-b07c4558cf70
+		summarizeBy: none
+		sourceColumn: ed_flag_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_diag_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: e3710fec-ed14-4478-95c7-d2aa1f11988f
+		summarizeBy: none
+		sourceColumn: pri_diag_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_diag_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 71c5bfab-883e-45d8-9629-1979fd272f10
+		summarizeBy: none
+		sourceColumn: pri_diag_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_nbr_diags
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 9528ac17-c639-4dfb-a6ba-37239660147a
+		summarizeBy: sum
+		sourceColumn: total_nbr_diags
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_proc_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: c229eac7-73fd-494f-b948-ccb1054c7110
+		summarizeBy: none
+		sourceColumn: pri_proc_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_proc_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 53724346-bffc-4add-a011-c05a15e3ca7c
+		summarizeBy: none
+		sourceColumn: pri_proc_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_nbr_procs
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 42bfd32c-e357-4f2d-ba5d-c2863388acd9
+		summarizeBy: sum
+		sourceColumn: total_nbr_procs
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c384d46b-0bab-473c-a036-0db4b7a45e1a
+		summarizeBy: sum
+		sourceColumn: readmit_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_to_readmit
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ec94bfa6-9e0a-4330-b4fc-7dc7850167d3
+		summarizeBy: sum
+		sourceColumn: days_to_readmit
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_within_30_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3758bed7-7a90-4255-8d60-62c0c0ad1ec7
+		summarizeBy: sum
+		sourceColumn: readmit_within_30_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_data_group_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 7d8a9f25-b706-4bf3-8b0f-4c76c023285c
+		summarizeBy: sum
+		sourceColumn: readmit_data_group_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_encounter_record_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5b154fb3-c18a-4fad-b7df-22e3736b6fc4
+		summarizeBy: sum
+		sourceColumn: readmit_encounter_record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column related_readmit_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: baa38c6f-43ab-4193-94ca-a13ff6ef7446
+		summarizeBy: sum
+		sourceColumn: related_readmit_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_psych_alcohol_drug_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 7e658fac-0cd6-4d5a-9abe-97f0c2e9069d
+		summarizeBy: sum
+		sourceColumn: readmit_psych_alcohol_drug_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_msdrg_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6944659a-0237-4035-b3a0-413e138d833c
+		summarizeBy: sum
+		sourceColumn: readmit_msdrg_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_msdrg_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: b58ce290-d19c-491a-b625-b12c48684a13
+		summarizeBy: none
+		sourceColumn: readmit_msdrg_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_planned_adm_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 64c7d988-7bf6-4d23-ba91-b36c23bb55c9
+		summarizeBy: sum
+		sourceColumn: readmit_planned_adm_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_hospice_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ddaa8c1e-8317-4e06-adc5-3c8aa3a23fcc
+		summarizeBy: sum
+		sourceColumn: readmit_hospice_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_pri_diag_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: d1dcd996-c39d-4d35-b965-2d6dd1f44fe0
+		summarizeBy: none
+		sourceColumn: readmit_pri_diag_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_pri_diag_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: ab50a9f7-d51c-4b2a-9835-0ed999bb27e9
+		summarizeBy: none
+		sourceColumn: readmit_pri_diag_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_pri_diag_cat_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 7af66648-c552-4766-8002-ea43fd36045b
+		summarizeBy: none
+		sourceColumn: readmit_pri_diag_cat_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_pri_diag_cat_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 7104f108-6b14-4fa2-a889-ffb49156648f
+		summarizeBy: none
+		sourceColumn: readmit_pri_diag_cat_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_pri_proc_cat_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: ed5348aa-14ac-45f0-80b9-4d56e45cc665
+		summarizeBy: none
+		sourceColumn: readmit_pri_proc_cat_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmit_pri_proc_cat_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 0763f148-4034-4152-bd15-974153d1febb
+		summarizeBy: none
+		sourceColumn: readmit_pri_proc_cat_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column palliative_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 28cc33fd-0685-42e5-8f8f-eed8a42c74bd
+		summarizeBy: sum
+		sourceColumn: palliative_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_abuse_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6dbb75a2-ee75-460d-b709-51b0072f1390
+		summarizeBy: sum
+		sourceColumn: sub_abuse_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_cost
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b340d797-41d6-4669-abb4-d07038f95301
+		summarizeBy: sum
+		sourceColumn: total_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_direct_cost
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2aa26787-045a-4c99-b7dc-01c13cde1bea
+		summarizeBy: sum
+		sourceColumn: total_direct_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column race_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d2288881-2972-40cc-aef0-0696ffa889e7
+		summarizeBy: sum
+		sourceColumn: race_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column race_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: ea100617-45f3-4026-a015-8b542d770ff1
+		summarizeBy: none
+		sourceColumn: race_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column ethnicity_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: fc9ffd49-e2da-45f1-9e80-24e5963908e2
+		summarizeBy: none
+		sourceColumn: ethnicity_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column ethnicity_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 2bc58fe4-3029-4a35-83f9-ef0a9b92a904
+		summarizeBy: none
+		sourceColumn: ethnicity_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column sex_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f410605d-e432-43ac-8afd-44c1422ad114
+		summarizeBy: sum
+		sourceColumn: sex_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column sex_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 4c7f1314-ab7e-4438-b52d-de7305a9d952
+		summarizeBy: none
+		sourceColumn: sex_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_payer_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: ce61bd73-ae2d-4a26-a282-9a2ba6fa4e04
+		summarizeBy: none
+		sourceColumn: pri_payer_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_payer_name
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 79bf1784-40fb-46a0-98f0-1c69c761eb17
+		summarizeBy: none
+		sourceColumn: pri_payer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_payer_product_line_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 965bf256-1eb3-4a3d-8c36-cc4cb34aa455
+		summarizeBy: none
+		sourceColumn: pri_payer_product_line_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_payer_product_line_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: f8562e36-37e8-4d34-9c19-ef7e88c89131
+		summarizeBy: none
+		sourceColumn: pri_payer_product_line_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_payer_segment_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: edc7b537-7482-4402-9612-851c43fa2cd5
+		summarizeBy: none
+		sourceColumn: pri_payer_segment_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column pri_payer_segment_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 80782b0c-bffe-4601-8cc2-12f106584e9a
+		summarizeBy: none
+		sourceColumn: pri_payer_segment_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column sec_payer_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 94df4981-96c5-46d1-9ad4-c42ac57ba3f4
+		summarizeBy: none
+		sourceColumn: sec_payer_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column sec_payer_name
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: adbea5e9-f910-4275-b9e7-19f49dc51b6f
+		summarizeBy: none
+		sourceColumn: sec_payer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column sec_payer_product_line_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 9f913f14-ebaa-4190-af30-f361df19a2d4
+		summarizeBy: none
+		sourceColumn: sec_payer_product_line_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column sec_payer_product_line_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: c0420ee5-8afb-4c20-9382-97d84d407c47
+		summarizeBy: none
+		sourceColumn: sec_payer_product_line_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column sec_payer_segment_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: fd46d1e1-fe1e-4812-8eeb-357a9acbc5de
+		summarizeBy: none
+		sourceColumn: sec_payer_segment_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column sec_payer_segment_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: c2a8225a-3475-4310-91da-e342acb49a66
+		summarizeBy: none
+		sourceColumn: sec_payer_segment_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column modified_msdrg_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f023d9ee-6283-4a28-a3a7-e9ebac6eab0f
+		summarizeBy: sum
+		sourceColumn: modified_msdrg_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column modified_msdrg_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 5800511e-2b13-4953-a263-52b2eaa08922
+		summarizeBy: none
+		sourceColumn: modified_msdrg_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column rem_model_group_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4555183b-4359-4ddf-81a5-6f2dbf3c4814
+		summarizeBy: sum
+		sourceColumn: rem_model_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column rem_model_group_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: a4e71716-95b4-4113-a837-7dec59e4da06
+		summarizeBy: none
+		sourceColumn: rem_model_group_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_cost_model_group_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 56847c86-478f-4b56-aab6-0eabd38f4465
+		summarizeBy: sum
+		sourceColumn: los_cost_model_group_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_cost_model_group_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: faf532f0-6b82-438e-9bed-0092c552c946
+		summarizeBy: none
+		sourceColumn: los_cost_model_group_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column rem_scale_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b2ca2021-97a3-4249-972c-849dcf0702f2
+		summarizeBy: sum
+		sourceColumn: rem_scale_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column rem_scale_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 9148040f-b5c7-4e81-b707-86fece0a7ec4
+		summarizeBy: none
+		sourceColumn: rem_scale_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column rem_scale_code_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 529bf644-c76c-4d05-9e65-c25098b7de5c
+		summarizeBy: sum
+		sourceColumn: rem_scale_code_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column rem_scale_desc_cm
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 76f871c2-05c4-4af3-975b-9013cf682fe7
+		summarizeBy: none
+		sourceColumn: rem_scale_desc_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_rem_scale_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: dbafc40a-d356-4bdc-b2b5-3eaef67924c5
+		summarizeBy: sum
+		sourceColumn: los_rem_scale_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_rem_scale_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: fa60f67c-1864-4786-ac02-9d98fffd6ee6
+		summarizeBy: none
+		sourceColumn: los_rem_scale_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_rem_scale_code_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: cf437c36-b727-4563-b8cd-04b5e1c1020a
+		summarizeBy: sum
+		sourceColumn: los_rem_scale_code_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_rem_scale_desc_cm
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 5edbe9b8-cf85-4306-8c03-9b24f329e0c2
+		summarizeBy: none
+		sourceColumn: los_rem_scale_desc_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_rem_scale_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 87074233-c288-4bb3-9c96-bb6c1856d96f
+		summarizeBy: sum
+		sourceColumn: cost_rem_scale_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_rem_scale_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: d8016356-594d-4850-9076-0698eb29b179
+		summarizeBy: none
+		sourceColumn: cost_rem_scale_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_rem_scale_code_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f11b8f72-74eb-41b1-abdf-ea24edad3818
+		summarizeBy: sum
+		sourceColumn: cost_rem_scale_code_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_rem_scale_desc_cm
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 86472e4b-fe23-4db0-8ed0-556f9778c975
+		summarizeBy: none
+		sourceColumn: cost_rem_scale_desc_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column mort_acuity_scale_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c0ae3261-190d-4d01-8c39-7f36aef40452
+		summarizeBy: sum
+		sourceColumn: mort_acuity_scale_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column mort_acuity_scale_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 38056f54-267b-44af-be96-2d5bdb388421
+		summarizeBy: none
+		sourceColumn: mort_acuity_scale_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column mort_acuity_scale_code_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5404ce42-832e-4b31-8a95-45a2c28dd494
+		summarizeBy: sum
+		sourceColumn: mort_acuity_scale_code_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column mort_acuity_scale_desc_cm
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 92fdd66d-6cee-484d-bc1e-0cdcc3daa3f1
+		summarizeBy: none
+		sourceColumn: mort_acuity_scale_desc_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_acuity_scale_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2a30b428-2cf1-4e3b-8f5a-9dbf2ef4fd9f
+		summarizeBy: sum
+		sourceColumn: los_acuity_scale_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_acuity_scale_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 10fde403-78d5-4aac-a80d-288a87abacf6
+		summarizeBy: none
+		sourceColumn: los_acuity_scale_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_acuity_scale_code_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 006c78e7-b468-4ab4-8803-584b6666c2c2
+		summarizeBy: sum
+		sourceColumn: los_acuity_scale_code_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column los_acuity_scale_desc_cm
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 3d167ae0-18e1-4a34-b981-2f6db4afa123
+		summarizeBy: none
+		sourceColumn: los_acuity_scale_desc_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_acuity_scale_code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b87c859e-a42f-47bd-8721-bc1a089aab26
+		summarizeBy: sum
+		sourceColumn: cost_acuity_scale_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_acuity_scale_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 122570b8-2b9d-4e8d-837d-27c2eddca87b
+		summarizeBy: none
+		sourceColumn: cost_acuity_scale_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_acuity_scale_code_cm
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 14f2b694-99d3-473a-90c5-856b95e46da5
+		summarizeBy: sum
+		sourceColumn: cost_acuity_scale_code_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_acuity_scale_desc_cm
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 9e9a2053-5a5d-4c3f-baca-bc5206d90324
+		summarizeBy: none
+		sourceColumn: cost_acuity_scale_desc_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdrg_capacity_group
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: e6b64e27-042c-4659-93ce-3da60a1f866e
+		summarizeBy: none
+		sourceColumn: msdrg_capacity_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip_code
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 1e1df468-026c-43e6-8133-d0e8f65c7594
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column hospital_flag
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 936b181e-14e4-4e39-8fca-257dfab2e50c
+		summarizeBy: none
+		sourceColumn: hospital_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column pediatric_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6a338e66-2d91-42cd-ae3f-51f5204a040d
+		summarizeBy: sum
+		sourceColumn: pediatric_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_bucket
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 017cffcf-55f8-4e27-ac4a-62ed83ea0d85
+		summarizeBy: none
+		sourceColumn: age_bucket
+
+		annotation SummarizationSetBy = Automatic
+
+	column xfer_from_hospice_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: edc2da43-dad0-45cb-894c-9bafb2ff9472
+		summarizeBy: sum
+		sourceColumn: xfer_from_hospice_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column left_ama_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ec6f883b-c4c4-484f-8b83-a1ce1fb7742b
+		summarizeBy: sum
+		sourceColumn: left_ama_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column xfer_out_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 84dff900-be83-4df2-b807-cfed53a9de28
+		summarizeBy: sum
+		sourceColumn: xfer_out_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column vvi
+		dataType: double
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 7072524d-0bf1-434f-a158-ff4975e3f60b
+		summarizeBy: sum
+		sourceColumn: vvi
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column economic
+		dataType: double
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 9e58b570-b8a1-466d-80ed-1004d8f6624b
+		summarizeBy: sum
+		sourceColumn: economic
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column education
+		dataType: double
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 4b5f0093-f2ef-45b5-a736-4deb8bbddce3
+		summarizeBy: sum
+		sourceColumn: education
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column health_care_access
+		dataType: double
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 7c38eda9-1675-41df-8202-1b1441c84150
+		summarizeBy: sum
+		sourceColumn: health_care_access
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column housing
+		dataType: double
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 580d80a7-1717-47af-8692-e3215d5986b8
+		summarizeBy: sum
+		sourceColumn: housing
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column social
+		dataType: double
+		sourceProviderType: decimal(5, 2)
+		lineageTag: 67fed1c8-cb8d-4e26-9c9b-ba3d15cea465
+		summarizeBy: sum
+		sourceColumn: social
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column high_utilizer_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3e3ac784-3ec3-4059-b83c-219ebf13117f
+		summarizeBy: sum
+		sourceColumn: high_utilizer_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column icu_days_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: affdc5ab-9f3f-4ded-a74b-f14ffbc82b8e
+		summarizeBy: sum
+		sourceColumn: icu_days_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column perinatal_age_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f6bacf03-8cd5-4b61-bc0b-0f71800a1d7c
+		summarizeBy: sum
+		sourceColumn: perinatal_age_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column ed_flag_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: bf132f76-684a-40b7-8770-32d657d018bb
+		summarizeBy: none
+		sourceColumn: ed_flag_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_nov_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 2e3ecc02-173a-404f-9787-8bcb0b9dcc7f
+		summarizeBy: none
+		sourceColumn: service_line_custom_nov_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_uvm_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: fc6d1464-cc47-4494-ad63-5e8414b89931
+		summarizeBy: none
+		sourceColumn: service_line_custom_uvm_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_qa_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 39dd5f53-d495-4962-98b8-ab3c6b782cb1
+		summarizeBy: none
+		sourceColumn: service_line_custom_qa_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_banner_tuc_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 3276f9b4-014c-4e74-905c-8755f7ab0afe
+		summarizeBy: none
+		sourceColumn: service_line_custom_banner_tuc_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_banner_tuc_ped_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 59485cab-d9f5-40e3-809f-70e8b799610b
+		summarizeBy: none
+		sourceColumn: service_line_custom_banner_tuc_ped_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_banner_phx_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 517b22ec-4df0-40d2-87b2-1efc4a7d08b1
+		summarizeBy: none
+		sourceColumn: service_line_custom_banner_phx_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_banner_south_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 87d6fff2-7bc4-43d4-a591-ffbd4bce8b3f
+		summarizeBy: none
+		sourceColumn: service_line_custom_banner_south_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line_custom_sg2_desc
+		dataType: string
+		sourceProviderType: nvarchar(2048)
+		lineageTag: 2d4cf695-137c-47d4-8089-231ea84dc778
+		summarizeBy: none
+		sourceColumn: service_line_custom_sg2_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column dbt_last_run
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: cfa98eff-e72e-4ff6-969f-5014468590ec
+		summarizeBy: none
+		sourceColumn: dbt_last_run
+
+		annotation SummarizationSetBy = Automatic
+
+	partition encounter = m
+		mode: directQuery
+		source =
+				let
+				    Source = StarburstPresto.Contents("starburst.stage.vizientinc.com", 443, [Role=null, Catalog="edl", UseSystemProxy=null, ExtraConnectionString=null]),
+				    edl_Database = Source{[Name="edl",Kind="Database"]}[Data],
+				    optauto_assets_Schema = edl_Database{[Name="optauto_assets",Kind="Schema"]}[Data],
+				    dim_service_line_Table = optauto_assets_Schema{[Name="encounter",Kind="Table"]}[Data]
+				in
+				    dim_service_line_Table
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
